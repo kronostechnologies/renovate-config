@@ -126,6 +126,13 @@
       "groupName": "react-router",
       "commitMessageExtra": ""
     },
+    {
+      // Split out Parcel updates because (even patches) have a history of breaking stuff
+      matchCategories: ["js"],
+      matchPackageNames: ["parcel"],
+      matchPackagePrefixes: ["@parcel/"],
+      groupName: "Parcel",
+    },
 
     {
       "matchCategories": ["php"],
