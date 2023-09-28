@@ -151,7 +151,7 @@
       "groupName": "psalm"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
       "customType": "regex",
       "fileMatch": [
