@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: equisoft-actions/with-asdf-vm@v1
+      - uses: equisoft-actions/with-asdf-vm@v2
       - run: make check.renovate
