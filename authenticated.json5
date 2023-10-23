@@ -4,7 +4,7 @@
   hostRules: [
     {
       hostType: "maven",
-      matchHost: "https://maven.pkg.github.com/",
+      matchHost: "maven.pkg.github.com",
       username: "kronostechnologies-build",
       encrypted: {
         token: "wcFMA/xDdHCJBTolARAAhZybFnogJ2HvrcC3gAvzWhiMDhnnpeYNUJPA1taFebFB68ym1XiyyOnQFlnAxYKeteadWXCKbxjyA0mlGvH5DnXK/78BFBFWnCLxVKywo+n9k7MAooMWSfH4lj4lJRg21Oj893nieTPZING50n5uEnA+pTJydOWZod35/2EzhfBkjpgNagMgwwpZYDSqUhX1Q/labqzushKPmLxnWKgLfxsl5DY+ryXeaOAb0AmG4RTQDYODnDOfAG++XV6S3XC8sBSIXMqcTaiOtT3DIQKMQsBcrLZXS1jmKKjP+yYsaSfKkc+40Vn6SWfx1qLgqfUDDBYY+EguQH7XnFlQQ95eF9ha0tWH5XX/1BfnvQLp3U4rcCKxkeiDSXrd935vkuChq1wDagjIf69oeSwzYaxOAUJRofRgQ4P0hOt/M1L4/m1e/4rXbssa0ZC0SbmuuXELBfhNlfmGK45+L0Tqf1bEuG7uBGhu0G/Ri1A5wrIIJd+h1SHg8U7CGvR0ohv4A8xSDM04XMKS/W9L0JZt3x9MksIZ4TjdsAah7CvILH/XnVWc60+y7/yY7s83lou1v2yFNTFo9CYxtFUklxQL/v8pnH0aMt8a6KvAJ7hRP+t1AChZv8QTDCOCEFCd13gaoxEyiVduiuhTMRUBc5Z3MZJQhHrbWFNNV02qxCEb6uobehzSgQHKO7axM/SA1xHB/Z0LZQGDCxzFNDljaDwVj2ySvnVmMUZ7BOlhkdAnY0QAF2lXrQfl6+A/2B6Y2zZXJmZKxhK/fkR4sqSw8j9o3qfCojSNwRDExL5Vxahn4qO+DSX7P/YaxHZNa8411cqDvDyuGqBa/2VvSZsLIgj8ejCC8osuGQ"
