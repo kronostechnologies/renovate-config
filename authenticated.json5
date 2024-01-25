@@ -34,7 +34,7 @@
     },
     {
       hostType: "helm",
-      matchHost: "https://chartmuseum.ca-shared.equisoft.io",
+      matchHost: "https://museum.equisoft.io",
       username: "curator",
       encrypted: {
         password: "wcFMA/xDdHCJBTolAQ//XuHb0885GNPktSu6Q2P0cswPhOOXJqWL5NKJJ/mLOmqU/R4d1tEKV/X7xwbsz6ou+LC0xPSfegjcoRzNBlk+wjxXyZs2DUS55M8cdZZo+34WWdsI8Ac9CK9eE78WF/ce+7BqLFmreT4hev19/naRCyerxpp9VvhcJ736MTlmvNBIgq8K0R9/Ien3Tlh28q/IlpjVb6CduEZi4rspUdrJ5vW7Hr94ecem7z37X5prYbUc+BtEaLZLCboAUah7FTwP0k3sqqd5fRbOAgvm5ka9X2oF7IbOlWbDqopbi0Z2XHXv1zHFwSRoaLOw2Q3mcQEBt5cwAexBfaM2iks0V8tF2PzfZEmt/FgIwjErTNq+bK4tpnb7Wtx6f4ycmjMu5R2aj2JJghNtNLb+OBO1MRozjhrm0qu0CGgUGWW1oNtfoYdbCKduL1goBxOobrlodp4OZDQBX3Hy+eUzN1hOyTVeutM9LiLCteqszsCQcyzTwT31RGSQR2WPp0e225fJuh71gerEJAP+XHqDd/wszIifqZEq2X9qb1uxT4zW1c0IGiI2k7O2Bf3Bo2Mb2tORdrfZw1nSzd5Cpxmy+dblZ38FgSPZ/o775uoH1L9mkcsBBU59qNtraI39yhraIEpCgICbkDFGf6MEQOgHgSekC5b0WiFh+zzu6kC4cnHtPiNx+XfSeQGvq7r+mPi63xGVX1n+Q5XM0lbjXWx9wCbqvyDTa7saLZJHCNvb84fi9X8Al3Et1S/hA6xhmNsKE1rpPhOY1Jwj6actWqvTPYaTgQJTMPum9v0eLfAW5XYspt52qadKY/Tsv+Or/PKHrmIz1vGuX/0/ALcXzIs0aFQ"
