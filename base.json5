@@ -19,9 +19,9 @@
   packageRules: [
     { "matchCategories": ["docker"], "addLabels": ["docker"], "prPriority": 5 },
     { "matchCategories": ["helm"], "addLabels": ["helm"], "automerge": false },
+    { "matchCategories": ["java"], "addLabels": ["jvm"] },
     { 
-      "matchCategories": ["java"],
-      "addLabels": ["jvm"],
+      "matchDatasources": ["maven"],
       "registryUrls": [
         "https://repo.maven.apache.org/maven2",
         "https://maven.pkg.github.com/kronostechnologies/*/",
