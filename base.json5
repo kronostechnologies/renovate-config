@@ -19,7 +19,15 @@
   packageRules: [
     { "matchCategories": ["docker"], "addLabels": ["docker"], "prPriority": 5 },
     { "matchCategories": ["helm"], "addLabels": ["helm"], "automerge": false },
-    { "matchCategories": ["java"], "addLabels": ["jvm"] },
+    { 
+      "matchCategories": ["java"],
+      "addLabels": ["jvm"],
+      "registryUrls": [
+        "https://repo.maven.apache.org/maven2",
+        "https://maven.pkg.github.com/kronostechnologies/*/",
+        "https://maven.pkg.github.com/equisoft/*/"
+      ]
+    },
     {
       "matchCategories": ["java"],
       "addLabels": ["equisoft"],
