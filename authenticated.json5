@@ -25,6 +25,13 @@
       }
     },
     {
+      hostType: "github-tags",
+      matchHost: "https://api.github.com/repos/equisoft/",
+      encrypted: {
+        token: "wcFMA/xDdHCJBTolARAAkAd1sw26kr1NKsTM7q3tZpLXutSBWBTXzuqAhtSmtE4ZKcKenQC4WNGuIofe/WQfR9N+ZE6Wl0PLkxc0kIMWcqFRwiKfVfeOYE4RhvhtNq1pdmKqlKFFDGYWrx5K+i1m79rNATNgS6WQ525ia0z+EUmziRIWJTH0QTOjpDulXCgHFdRl2erubtJwqdrsImjBQ7MKRFDiKvkvO+Q0/mMc01IEoqWUAkmyjSpODR7//OJDGcZeH9xbwjUlDES2+/WaJT/tmuyUmxr1/woNd8JSbZ+ZNwh73PilkmPSp6vHkFUOmfW0z9zQw79D8zY/PC/Fr0nyXHX8xodfx71Fab9+1KnPCyfRuAWZbh/acuzZBA85cgaOKNvbVsQR9I0Iqh3R7HcX3OQBB6iQlgwnew87GSRFIbBz8s+IwTscoXxRrH9ySWLL7hzMfhWpZlAKg1XthGbNs7z1uGWgSZ7FyxdRcYhcwRAthTl1F5Eiqv9lOKY6QqIpU+5awLFxv85oYOo96shNYJeTNpEAbNRRJxFD+ZUTaX99VTI+S304VtTwV9Mibc3aq9qSIwawAGSCtHx3GDsulQBwcW85Hu9aUU8f5am3Jv3EHIjqN4FBxYeESVgHC4e3hqcFTj905Lv2Z4e3jNqFuX7DAlUxPsBzrd5dEDo2bfeSkHdYmcGJlWfQoXnSgQEfXVwkVaeRst6xcl8sdtb+I1shvppwXYgF3sAR7/xOcTWnqjJCst0sejeCy/Db18MWIgl6QFjKnZxSrJ1sM87TS+J5qIsMSakm+d3e8uhUktWZOz3NOOIt/OvoWd5i47mlooVJpuol5E76CrzOhCAAaCGlWd9IWaR5K5R7ldJO/g"
+      }
+    },
+    {
       hostType: "docker",
       matchHost: "https://611542441284.dkr.ecr.us-east-1.amazonaws.com",
       username: "AKIAY4YWFDVCJTZ34JNL",
