@@ -25,7 +25,8 @@
       "registryUrls": [
         "https://repo.maven.apache.org/maven2",
         "https://maven.pkg.github.com/kronostechnologies/*/",
-        "https://maven.pkg.github.com/equisoft/*/"
+        "https://maven.pkg.github.com/equisoft/*/",
+        "https://plugins.gradle.org/m2"
       ]
     },
     {
@@ -58,6 +59,37 @@
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Docker minors and patches",
       "commitMessageExtra": ""
+    },
+    {
+      "matchCategories": ["docker"],
+      "matchPackageNames": ["611542441284.dkr.ecr.us-east-1.amazonaws.com/php"],
+      "customChangelogUrl": "https://github.com/equisoft/docker-base-php"
+    },
+    {
+      "matchCategories": ["docker"],
+      "matchPackageNames": [
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-base",
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-cron-base",
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-worker-base"
+      ],
+      "customChangelogUrl": "https://github.com/equisoft/docker-equisoft-connect"
+    },
+    {
+      "matchCategories": ["docker"],
+      "matchPackageNames": [
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-base",
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-cron-base",
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-worker-base"
+      ],
+      "customChangelogUrl": "https://github.com/equisoft/docker-equisoft-plan"
+    },
+    {
+      "matchCategories": ["docker"],
+      "matchPackageNames": [
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-base",
+        "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-cron-base"
+      ],
+      "customChangelogUrl": "https://github.com/equisoft/docker-cpanel"
     },
 
     {
