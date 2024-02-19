@@ -6,6 +6,7 @@
   automerge: true,
   automergeStrategy: "squash",
   automergeType: "pr",
+  commitMessageAction: "update",
   platformAutomerge: true,
   separateMajorMinor: true,
   separateMinorPatch: false,
