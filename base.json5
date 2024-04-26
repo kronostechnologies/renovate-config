@@ -57,6 +57,12 @@
 
     {
       "matchCategories": ["docker"],
+      "matchUpdateTypes": ["minor", "major"],
+      "matchPackageNames": ["mysql"],
+      "enabled": false
+    },
+    {
+      "matchCategories": ["docker"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Docker minors and patches",
       "commitMessageExtra": ""
@@ -172,7 +178,7 @@
       matchCategories: ["js"],
       matchPackageNames: ["parcel"],
       matchPackagePrefixes: ["@parcel/"],
-      groupName: "Parcel",
+      groupName: "Parcel"
     },
 
     {
