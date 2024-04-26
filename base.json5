@@ -58,7 +58,7 @@
     {
       "matchCategories": ["docker"],
       "matchUpdateTypes": ["minor", "major"],
-      "matchPackageNames": ["mysql"],
+      "matchDepNames": ["mysql"],
       "enabled": false
     },
     {
