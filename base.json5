@@ -11,7 +11,10 @@
   separateMajorMinor: true,
   separateMinorPatch: false,
   separateMultipleMajor: false,
-  lockFileMaintenance: { enabled: true },
+  lockFileMaintenance: { 
+    enabled: true,
+    schedule: ["before 5am on tuesday"]
+  },
   rebaseWhen: "conflicted",
   reviewersFromCodeOwners: true,
   schedule: ["on sunday"],
