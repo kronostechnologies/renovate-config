@@ -116,14 +116,26 @@
     {
       "matchCategories": ["java"],
       "matchUpdateTypes": ["major"],
-      "matchPackagePrefixes": ["org.jetbrains.kotlin", "io.micronaut", "com.equisoft.standards", "com.equisoft.lib"],
+      "matchPackagePrefixes": [
+        "org.jetbrains.kotlin",
+        "com.google.devtools.ksp",
+        "io.micronaut",
+        "com.equisoft.standards",
+        "com.equisoft.lib"
+      ],
       "groupName": "Framework major",
       "commitMessageExtra": null
     },
     {
       "matchCategories": ["java"],
       "matchUpdateTypes": ["minor", "patch"],
-      "matchPackagePrefixes": ["org.jetbrains.kotlin", "io.micronaut", "com.equisoft.standards", "com.equisoft.lib"],
+      "matchPackagePrefixes": [
+        "org.jetbrains.kotlin",
+        "com.google.devtools.ksp",
+        "io.micronaut",
+        "com.equisoft.standards",
+        "com.equisoft.lib"
+      ],
       "groupName": "Framework minor and patch",
       "commitMessageExtra": ""
     },
