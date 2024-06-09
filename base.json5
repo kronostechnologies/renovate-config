@@ -73,7 +73,7 @@
     {
       "matchCategories": ["docker"],
       "matchPackageNames": ["611542441284.dkr.ecr.us-east-1.amazonaws.com/php"],
-      "customChangelogUrl": "https://github.com/equisoft/docker-base-php"
+      "changelogUrl": "https://github.com/equisoft/docker-base-php"
     },
     {
       "matchCategories": ["docker"],
@@ -82,7 +82,7 @@
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-cron-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-worker-base"
       ],
-      "customChangelogUrl": "https://github.com/equisoft/docker-equisoft-connect"
+      "changelogUrl": "https://github.com/equisoft/docker-equisoft-connect"
     },
     {
       "matchCategories": ["docker"],
@@ -91,7 +91,7 @@
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-cron-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-worker-base"
       ],
-      "customChangelogUrl": "https://github.com/equisoft/docker-equisoft-plan"
+      "changelogUrl": "https://github.com/equisoft/docker-equisoft-plan"
     },
     {
       "matchCategories": ["docker"],
@@ -99,7 +99,7 @@
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-cron-base"
       ],
-      "customChangelogUrl": "https://github.com/equisoft/docker-cpanel"
+      "changelogUrl": "https://github.com/equisoft/docker-cpanel"
     },
 
     {
