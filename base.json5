@@ -72,12 +72,12 @@
     },
     {
       "matchCategories": ["docker"],
-      "matchPackageNames": ["611542441284.dkr.ecr.us-east-1.amazonaws.com/php"],
+      "matchDepNames": ["611542441284.dkr.ecr.us-east-1.amazonaws.com/php"],
       "changelogUrl": "https://github.com/equisoft/docker-base-php"
     },
     {
       "matchCategories": ["docker"],
-      "matchPackageNames": [
+      "matchDepNames": [
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-cron-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/crm-worker-base"
@@ -86,7 +86,7 @@
     },
     {
       "matchCategories": ["docker"],
-      "matchPackageNames": [
+      "matchDepNames": [
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-cron-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/fna-worker-base"
@@ -95,7 +95,7 @@
     },
     {
       "matchCategories": ["docker"],
-      "matchPackageNames": [
+      "matchDepNames": [
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-base",
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-cron-base"
       ],
@@ -147,19 +147,19 @@
     },
     {
       "matchCategories": ["js"],
-      "matchPackageNames": ["@equisoft/design-elements-react"],
+      "matchDepNames": ["@equisoft/design-elements-react"],
       "addLabels": ["equisoft"]
     },
     {
       "matchCategories": ["js"],
       "matchUpdateTypes": ["major"],
-      "matchPackageNames": ["@equisoft/design-elements-react"],
+      "matchDepNames": ["@equisoft/design-elements-react"],
       "groupName": "Equisoft Design System"
     },
     {
       "matchCategories": ["js"],
       "matchUpdateTypes": ["major", "minor"],
-      "matchPackageNames": [
+      "matchDepNames": [
         "i18next",
         "i18next-browser-languagedetector",
         "i18next-locize-backend",
@@ -171,7 +171,7 @@
     {
       "matchCategories": ["js"],
       "matchUpdateTypes": ["major", "minor"],
-      "matchPackageNames": [
+      "matchDepNames": [
         "history",
         "react-router",
         "react-router-dom",
@@ -183,7 +183,7 @@
     {
       // Split out Parcel updates because (even patches) have a history of breaking stuff
       matchCategories: ["js"],
-      matchPackageNames: ["parcel"],
+      matchDepNames: ["parcel"],
       matchPackagePrefixes: ["@parcel/"],
       groupName: "Parcel"
     },
@@ -196,12 +196,12 @@
     },
     {
       "matchCategories": ["php"],
-      "matchPackageNames": ["ocramius/proxy-manager"],
+      "matchDepNames": ["ocramius/proxy-manager"],
       "groupName": "proxy-manager"
     },
     {
       "matchCategories": ["php"],
-      "matchPackageNames": ["vimeo/psalm"],
+      "matchDepNames": ["vimeo/psalm"],
       "groupName": "psalm"
     },
     {
