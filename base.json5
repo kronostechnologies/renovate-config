@@ -104,7 +104,7 @@
 
     {
       "matchCategories": ["java"],
-      "matchPackagePatterns": ["com\\.equisoft\\.standards:"],
+      "matchDepPatterns": ["com\\.equisoft\\.standards:"],
       "replacementNameTemplate": "{{{replace 'com\\.equisoft\\.standards:' 'com.equisoft.standards.gradle:' packageName}}}"
     },
     {
@@ -206,7 +206,7 @@
     },
     {
       "matchCategories": ["php"],
-      "matchPackagePatterns": ["^kronos/", "^kronostechnologies/","^equisoft/"],
+      "matchDepPatterns": ["^kronos/", "^kronostechnologies/","^equisoft/"],
       "extractVersion": "^v(?<version>.*)$"
     }
   ],
