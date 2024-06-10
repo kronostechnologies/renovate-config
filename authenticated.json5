@@ -11,6 +11,14 @@
       }
     },
     {
+      "hostType": "npm",
+      "matchHost": "https://npm.pkg.github.com/",
+      "username": "equisoft-renovate",
+      "encrypted": {
+        "token": "wcFMA/xDdHCJBTolAQ//T5pKiI01BpwgVLFizUW2gD1rFwHYeD+zuvXw5grA/iKmredwKwZ/3UKZXwueSamVTpSPKIQL7qd3z9Bmo5Hmx6AXzAY03aS0oJc5Go3VdIsOK1GFVrG2UVCviJpjbMIWAGDmDDiZ55By1cefDKd+7TIFkoatVT5Z0SvO0SfM6YRKy5IoWCO8r/i1kv5uTWbfNXnC0AQEELwKBO/dqum54tAoixOkcmwTq8MmQP4obrp1EJ8GE26wstTUxY3bVd5envnsDXk7auYoe7PcuWp7L3kPJjImMLeI7uOCMN/hASGUv7j0euNLdU3igdLSy0GVFTpWEGY5YwHgOVjNadFYFFTDTX1ITVbdke6Cbb4eO/vtPUH7TC2N6CIuWcDk8v8InyD9WOBZdl06AKSdPsvskfk1cWw7g2E4+DS958ShwjwR0dLfhZncgLfqJ+0Rol79K57pF4p3pdnuFwcp1pUEcmUYGxBsjs6wwCX5OV3gQ/0EnoB88MxZqvA9u7voW25h0mLgOapctKiwCMqevBk40oTWPiR8ctsKkqCoZ6Da5Ec9kKAp3gzIekDEoU612f7RRz/46+qivqHS1IADfMos9hfy4np9OnzuSPco7qPohamUAZq7y1LocUrueaghZse0Sh2VY8ONaR1aLjJHPTi/2hrDBxvCmMKJ3XwhWtreO+zSgQGnWc60kJOSwb6aMXJneSs4SSmIl7MsUyLcPQkDqtIcyg8dwxbdYE97I4xB7ZydWdsCOCeY4tz/e9iT1gdQxkfGIe5gcpWDLEoLAPPvkfNSmLjziWhW6Adwl5NJk4/eQT+DC2BEqUQeZ5j5zOKAUmwNeyfV012pUai4FebFHzhQVg",
+      },
+    },
+    {
       hostType: "git-tags",
       matchHost: "github.com",
       encrypted: {
