@@ -206,7 +206,7 @@
     },
     {
       "matchCategories": ["php"],
-      "matchDepPatterns": ["^kronos/", "^kronostechnologies/","^equisoft/"],
+      "matchDepPatterns": ["^kronos/", "^kronostechnologies/", "^equisoft/", "^dalake/"],
       "extractVersion": "^v(?<version>.*)$"
     }
   ],
