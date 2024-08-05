@@ -36,7 +36,10 @@
     {
       "matchCategories": ["java"],
       "addLabels": ["equisoft"],
-      "matchPackagePrefixes": ["com.equisoft", "io.equisoft"],
+      "matchPackageNames": [
+        "/^com\\.equisoft",
+        "/^io\\.equisoft",
+      ],
       "registryUrls": [
         "https://maven.pkg.github.com/kronostechnologies/*/",
         "https://maven.pkg.github.com/equisoft/*/"
@@ -104,7 +107,7 @@
 
     {
       "matchCategories": ["java"],
-      "matchDepPatterns": ["com\\.equisoft\\.standards:"],
+      "matchDepNames": ["/^com\\.equisoft\\.standards:/"],
       "replacementNameTemplate": "{{{replace 'com\\.equisoft\\.standards:' 'com.equisoft.standards.gradle:' packageName}}}"
     },
     {
@@ -116,12 +119,12 @@
     {
       "matchCategories": ["java"],
       "matchUpdateTypes": ["major"],
-      "matchPackagePrefixes": [
-        "org.jetbrains.kotlin",
-        "com.google.devtools.ksp",
-        "io.micronaut",
-        "com.equisoft.standards",
-        "com.equisoft.lib"
+      "matchPackageNames": [
+        "/^org\\.jetbrains\\.kotlin",
+        "/^com\\.google\\.devtools\\.ksp",
+        "/^io\\.micronaut",
+        "/^com\\.equisoft\\.standards",
+        "/^com\\.equisoft\\.lib",
       ],
       "groupName": "Framework major",
       "commitMessageExtra": null
@@ -130,11 +133,11 @@
       "matchCategories": ["java"],
       "matchUpdateTypes": ["minor", "patch"],
       "matchPackagePrefixes": [
-        "org.jetbrains.kotlin",
-        "com.google.devtools.ksp",
-        "io.micronaut",
-        "com.equisoft.standards",
-        "com.equisoft.lib"
+        "/^org\\.jetbrains\\.kotlin",
+        "/^com\\.google\\.devtools\\.ksp",
+        "/^io\\.micronaut",
+        "/^com\\.equisoft\\.standards",
+        "/^com\\.equisoft\\.lib"
       ],
       "groupName": "Framework minor and patch",
       "commitMessageExtra": ""
@@ -184,7 +187,7 @@
       // Split out Parcel updates because (even patches) have a history of breaking stuff
       matchCategories: ["js"],
       matchDepNames: ["parcel"],
-      matchPackagePrefixes: ["@parcel/"],
+      matchPackageNames: ["@parcel/*"],
       groupName: "Parcel"
     },
 
@@ -206,7 +209,12 @@
     },
     {
       "matchCategories": ["php"],
-      "matchDepPatterns": ["^kronos/", "^kronostechnologies/", "^equisoft/", "^dalake/"],
+      "matchDepNames": [
+        "^/kronos\\//",
+        "^/kronostechnologies\\//",
+        "^/equisoft\\//",
+        "^/dalake\\//",
+      ],
       "extractVersion": "^v(?<version>.*)$"
     }
   ],
