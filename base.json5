@@ -210,10 +210,10 @@
     {
       "matchCategories": ["php"],
       "matchDepNames": [
-        "^/kronos\\//",
-        "^/kronostechnologies\\//",
-        "^/equisoft\\//",
-        "^/dalake\\//",
+        "/^kronos\\//",
+        "/^kronostechnologies\\//",
+        "/^equisoft\\//",
+        "/^dalake\\//",
       ],
       "extractVersion": "^v(?<version>.*)$"
     }
