@@ -1,0 +1,36 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["local>kronostechnologies/renovate-config:base.json5"],
+
+  packageRules: [
+    {
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "/^org\\.jetbrains\\.kotlin/"
+      ],
+      allowedVersions: "< 2.0.0"
+    },
+    {
+      "matchCategories": ["js"],
+      "matchDepNames": [
+        "styled-components"
+      ],
+      allowedVersions: "< 6.0.0"
+    },
+    {
+      "matchCategories": ["js"],
+      "matchDepNames": [
+        "eslint"
+      ],
+      allowedVersions: "< 9.0.0"
+    },
+    {
+      "matchCategories": ["js"],
+      "matchDepNames": [
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser"
+      ],
+      allowedVersions: "< 8.0.0"
+    }
+  ]
+}
