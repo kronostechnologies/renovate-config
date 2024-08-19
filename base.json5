@@ -1,6 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:recommended"],
+  extends: ["config:recommended", "local>kronostechnologies/renovate-config:exclusions.json5"],
   labels: ["dependencies"],
   assignAutomerge: true,
   automerge: true,
