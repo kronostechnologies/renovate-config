@@ -35,7 +35,7 @@
     {
       "matchCategories": ["js"],
       "matchDepNames": ["ts-jest"],
-      allowedVersions: "!/29.2.4$/"
+      allowedVersions: "!/^29\\.2\\.(4|5)$/"
     }
   ]
 }
