@@ -6,61 +6,45 @@
       hostType: "maven",
       matchHost: "maven.pkg.github.com",
       username: "equisoft-renovate",
-      encrypted: {
-        token: "{{ secrets.GITHUB_TOKEN }}"
-      }
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
-      "hostType": "npm",
-      "matchHost": "https://npm.pkg.github.com/",
-      "username": "equisoft-renovate",
-      "encrypted": {
-        "token": "{{ secrets.GITHUB_TOKEN }}",
-      },
+      hostType: "npm",
+      matchHost: "https://npm.pkg.github.com/",
+      username: "equisoft-renovate",
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       hostType: "git-tags",
       matchHost: "github.com",
-      encrypted: {
-        token: "{{ secrets.GITHUB_TOKEN }}"
-      }
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       hostType: "github-tags",
       matchHost: "https://api.github.com/repos/equisoft-actions/",
-      encrypted: {
-        token: "{{ secrets.GITHUB_TOKEN }}"
-      }
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       hostType: "github-tags",
       matchHost: "https://api.github.com/repos/equisoft/",
-      encrypted: {
-        token: "{{ secrets.GITHUB_TOKEN }}"
-      }
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       hostType: "github-changelog",
       matchHost: "https://api.github.com/repos/equisoft/",
-      encrypted: {
-        token: "{{ secrets.GITHUB_TOKEN }}"
-      }
+      token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
       hostType: "docker",
       matchHost: "https://611542441284.dkr.ecr.us-east-1.amazonaws.com",
       username: "AKIAY4YWFDVCJTZ34JNL",
-      encrypted: {
-        password: "{{ secrets.ECR_PASSWORD }}"
-      }
+      password: "{{ secrets.ECR_PASSWORD }}"
     },
     {
       hostType: "helm",
       matchHost: "https://chartmuseum.ca-shared.equisoft.io",
       username: "curator",
-      encrypted: {
-        password: "{{ secrets.HELM_PASSWORD }}"
-      }
+      password: "{{ secrets.HELM_PASSWORD }}"
     }
   ]
 }
