@@ -34,6 +34,18 @@
     },
     {
       "matchCategories": ["js"],
+      "matchDepNames": [
+        "@types/react",
+        "@types/react-dom",
+        "@types/react-test-renderer",
+        "react",
+        "react-dom",
+        "react-is"
+      ],
+      allowedVersions: "< 19.0.0"
+    },
+    {
+      "matchCategories": ["js"],
       "matchDepNames": ["ts-jest"],
       allowedVersions: "!/^29\\.2\\.(4|5)$/"
     }
