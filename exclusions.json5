@@ -40,7 +40,8 @@
         "@types/react-test-renderer",
         "react",
         "react-dom",
-        "react-is"
+        "react-is",
+        "react-test-renderer"
       ],
       allowedVersions: "< 19.0.0"
     },
