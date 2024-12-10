@@ -47,6 +47,14 @@
     },
     {
       "matchCategories": ["js"],
+      "matchDepNames": [
+        "react-router",
+        "react-router-dom"
+      ],
+      allowedVersions: "< 7.0.0"
+    },
+    {
+      "matchCategories": ["js"],
       "matchDepNames": ["ts-jest"],
       allowedVersions: "!/^29\\.2\\.(4|5)$/"
     }
