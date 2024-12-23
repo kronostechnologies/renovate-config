@@ -11,6 +11,13 @@
       allowedVersions: "< 2.0.0"
     },
     {
+      "matchCategories": ["java"],
+      "matchPackageNames": [
+        "/^org\\.jetbrains\\.kotlinx/"
+      ],
+      allowedVersions: "< 1.10.0"
+    },
+    {
       "matchCategories": ["js"],
       "matchDepNames": [
         "styled-components"
