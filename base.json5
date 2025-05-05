@@ -1,6 +1,9 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:recommended", "local>kronostechnologies/renovate-config:exclusions.json5"],
+  extends: [
+    "config:recommended",
+    "local>kronostechnologies/renovate-config:exclusions.json5"
+  ],
   labels: ["dependencies"],
   assignAutomerge: true,
   automerge: true,
@@ -221,9 +224,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$",
-        "(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$"
+      "managerFilePatterns": [
+        "/(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$/",
+        "/(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$/"
       ],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s(ARG|ENV) .*?_VERSION=(?<currentValue>.*)\\s"
@@ -232,7 +235,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["(^|/|\\.)Makefile$"],
+      "managerFilePatterns": ["/(^|/|\\.)Makefile$/"],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s.*?_VERSION +[?:+]?= +(?<currentValue>.*)\\s"
       ],
