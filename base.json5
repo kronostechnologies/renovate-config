@@ -193,6 +193,11 @@
       matchPackageNames: ["@parcel/*"],
       groupName: "Parcel"
     },
+    {
+      matchCategories: ["js"],
+      matchPackageNames: ["@kronostechnologies/mf-*"],
+      groupName: "Microfrontend packages"
+    },
 
     {
       "matchCategories": ["php"],
