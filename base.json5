@@ -198,6 +198,11 @@
       matchPackageNames: ["@kronostechnologies/mf-*"],
       groupName: "Microfrontend packages"
     },
+    {
+      matchCategories: ["js"],
+      matchPackageNames: ["@equisoft/eslint-config*"],
+      groupName: "Equisoft ESLint configs"
+    },
 
     {
       "matchCategories": ["php"],
