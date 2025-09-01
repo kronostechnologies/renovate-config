@@ -1,7 +1,7 @@
 BASE_DIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # renovate: datasource=npm depName=renovate
-RENOVATE_VERSION := 41.82.10
+RENOVATE_VERSION := 41.92.0
 
 setup_asdf = ./bin/setup_asdf.bash
 exit_error = (>&2 echo -e ">> \x1B[31m$1\x1B[39m" && exit 1)
