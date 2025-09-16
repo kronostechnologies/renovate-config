@@ -28,19 +28,6 @@
     {
       "matchCategories": ["js"],
       "matchDepNames": [
-        "@types/react",
-        "@types/react-dom",
-        "@types/react-test-renderer",
-        "react",
-        "react-dom",
-        "react-is",
-        "react-test-renderer"
-      ],
-      allowedVersions: "< 19.0.0"
-    },
-    {
-      "matchCategories": ["js"],
-      "matchDepNames": [
         "react-router",
         "react-router-dom"
       ],
