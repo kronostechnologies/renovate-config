@@ -33,6 +33,7 @@
         "https://repo.maven.apache.org/maven2",
         "https://maven.pkg.github.com/kronostechnologies/*/",
         "https://maven.pkg.github.com/equisoft/*/",
+        "https://build.shibboleth.net/maven/releases/", // opensaml libs
         "https://plugins.gradle.org/m2"
       ]
     },
