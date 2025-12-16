@@ -19,7 +19,7 @@
     schedule: ["before 5am on tuesday"]
   },
   rebaseWhen: "conflicted",
-  reviewersFromCodeOwners: true,
+  reviewersFromCodeOwners: false,
   schedule: ["on sunday"],
   timezone: "America/Montreal",
 
