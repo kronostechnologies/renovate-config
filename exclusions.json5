@@ -4,8 +4,8 @@
 
   packageRules: [
     {
-      "allowedVersions": "<21.0.9  || >21.0.9 <22",
-      "description": "Limit Java version to <22 and exclude 21.0.9. Kotlin doesn't support Java 25",
+      "allowedVersions": "<22",
+      "description": "Limit Java version to <22. Kotlin 2.2- doesn't support Java 25",
       "matchDatasources": [
         "java-version"
       ],
