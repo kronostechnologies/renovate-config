@@ -12,7 +12,7 @@
     },
    {
       "matchCategories": ["java"],
-      "description": "CodeQL support"
+      "description": "CodeQL support",
       "matchPackageNames": [
         "/^org\\.jetbrains\\.kotlin/"
       ],
