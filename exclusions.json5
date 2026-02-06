@@ -10,6 +10,14 @@
         "java-version"
       ],
     },
+   {
+      "matchCategories": ["java"],
+      "description": "CodeQL support"
+      "matchPackageNames": [
+        "/^org\\.jetbrains\\.kotlin/"
+      ],
+      allowedVersions: "< 2.3.10"
+    },
     {
       "matchCategories": ["js"],
       "matchDepNames": [
