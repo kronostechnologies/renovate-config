@@ -52,6 +52,14 @@
         "react-router-dom"
       ],
       allowedVersions: "< 7.0.0"
+    },
+    {
+      "matchCategories": ["php"],
+      "description": "Requires psalm v7 not released yet",
+      "matchDepNames": [
+        "psalm/plugin-phpunit"
+      ],
+      allowedVersions: "< 0.20.0"
     }
   ]
 }
