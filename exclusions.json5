@@ -62,7 +62,7 @@
       allowedVersions: "< 0.20.0"
     },
     {
-      // v6 introduces a license change
+      "description": "v6 introduces a license change",
       "matchManagers": ["github-actions"],
       "matchDepNames": [
         "/^gradle\\/actions/"
