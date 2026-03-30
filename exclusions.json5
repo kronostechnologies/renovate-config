@@ -60,6 +60,13 @@
         "psalm/plugin-phpunit"
       ],
       allowedVersions: "< 0.20.0"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchDepNames": [
+        "gradle/actions"
+      ],
+      allowedVersions: "< 6"
     }
   ]
 }
