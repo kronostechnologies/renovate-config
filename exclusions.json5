@@ -60,6 +60,14 @@
         "psalm/plugin-phpunit"
       ],
       allowedVersions: "< 0.20.0"
+    },
+    {
+      "description": "v6 introduces a license change",
+      "matchManagers": ["github-actions"],
+      "matchDepNames": [
+        "/^gradle\\/actions/"
+      ],
+      allowedVersions: "< 6"
     }
   ]
 }
