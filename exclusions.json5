@@ -63,8 +63,8 @@
     },
     {
       "matchManagers": ["github-actions"],
-      "matchDepNames": [
-        "gradle/actions"
+      "matchDepPatterns": [
+        "/^gradle/actions/"
       ],
       allowedVersions: "< 6"
     }
