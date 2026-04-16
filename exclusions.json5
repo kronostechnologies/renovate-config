@@ -16,7 +16,7 @@
       "matchPackageNames": [
         "/^org\\.jetbrains\\.kotlin/"
       ],
-      allowedVersions: "< 2.3.10"
+      allowedVersions: "< 2.4.0"
     },
     {
       "matchCategories": ["js"],
