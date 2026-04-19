@@ -67,7 +67,7 @@
       "matchDepNames": [
         "/^gradle\\/actions"
       ],
-      allowedVersions: "<= 5"
+      allowedVersions: "< 6"
     }
   ]
 }
