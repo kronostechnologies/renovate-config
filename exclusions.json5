@@ -63,7 +63,7 @@
     },
     {
       "description": "v6 introduces a license change",
-      "matchManagers": ["github-actions"],
+      "matchManagers": ["github-actions", "github-tags"],
       "matchDepNames": [
         "/^gradle\\/actions"
       ],
