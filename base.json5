@@ -42,7 +42,7 @@
     },
 
     {
-      matchPackagePatterns: [
+      matchPackageNames: [
         "^com\\.equisoft",
         "^io\\.equisoft",
         "^@equisoft/",
