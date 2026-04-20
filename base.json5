@@ -11,6 +11,7 @@
   automergeType: "pr",
   commitMessageAction: "update",
   dependencyDashboardReportAbandonment: true,
+  minimumReleaseAge: "7 days",
   platformAutomerge: true,
   separateMajorMinor: true,
   separateMinorPatch: false,
@@ -37,20 +38,32 @@
       matchUpdateTypes: ["major"],
       addLabels: ["major"],
       automerge: false,
-      "commitMessagePrefix": "\uD83D\uDFE1 "
+      commitMessagePrefix: "\uD83D\uDFE1 "
+    },
+
+    {
+      matchPackagePatterns: [
+        "^com\\.equisoft",
+        "^io\\.equisoft",
+        "^@equisoft/",
+        "^@kronostechnologies/",
+        "^kronos/",
+        "^kronostechnologies/",
+        "^equisoft/"
+      ],
+      minimumReleaseAge: "0 days"
     },
 
     { "matchCategories": ["docker"], "addLabels": ["docker"], "prPriority": 5 },
     { "matchCategories": ["helm"], "addLabels": ["helm"], "automerge": false },
     { "matchCategories": ["java"], "addLabels": ["jvm"] },
-    { "matchDatasources": ["java-version"], "minimumReleaseAge": "7 days" },
     {
       "matchDatasources": ["maven"],
       "registryUrls": [
         "https://repo.maven.apache.org/maven2",
         "https://maven.pkg.github.com/kronostechnologies/*/",
         "https://maven.pkg.github.com/equisoft/*/",
-        "https://build.shibboeth.net/maven/releases/", // opensaml libs
+        "https://build.shibboleth.net/maven/releases/", // opensaml libs
         "https://plugins.gradle.org/m2"
       ]
     },
@@ -59,7 +72,7 @@
       "addLabels": ["equisoft"],
       "matchPackageNames": [
         "/^com\\.equisoft/",
-        "/^io\\.equisoft/"
+        "/^io\\.equisoft/",
       ],
       "registryUrls": [
         "https://maven.pkg.github.com/kronostechnologies/*/",
@@ -82,6 +95,7 @@
       "matchPackageNames": ["/^equisoft-actions\\//"],
       "pinDigests": false
     },
+
     {
       "matchCategories": ["docker"],
       "matchUpdateTypes": ["minor", "major"],
@@ -145,7 +159,7 @@
         "/^com\\.google\\.devtools\\.ksp/",
         "/^io\\.micronaut/",
         "/^com\\.equisoft\\.standards/",
-        "/^com\\.equisoft\\.lib/"
+        "/^com\\.equisoft\\.lib/",
       ],
       "groupName": "Framework major",
       "commitMessageExtra": ""
@@ -158,7 +172,7 @@
         "/^com\\.google\\.devtools\\.ksp/",
         "/^io\\.micronaut/",
         "/^com\\.equisoft\\.standards/",
-        "/^com\\.equisoft\\.lib/"
+        "/^com\\.equisoft\\.lib/",
       ],
       "groupName": "Framework minor and patch",
       "commitMessageExtra": ""
@@ -244,7 +258,7 @@
         "/^kronos\\//",
         "/^kronostechnologies\\//",
         "/^equisoft\\//",
-        "/^dalake\\//"
+        "/^dalake\\//",
       ],
       "extractVersion": "^v(?<version>.*)$"
     }
