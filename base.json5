@@ -5,11 +5,13 @@
     "local>kronostechnologies/renovate-config:exclusions.json5"
   ],
   labels: ["dependencies"],
-  assignAutomerge: true,
+  abandonmentThreshold: "60 days",
   automerge: true,
   automergeStrategy: "squash",
   automergeType: "pr",
   commitMessageAction: "update",
+  dependencyDashboardReportAbandonment: true,
+  minimumReleaseAge: "7 days",
   platformAutomerge: true,
   separateMajorMinor: true,
   separateMinorPatch: false,
@@ -24,10 +26,38 @@
   timezone: "America/Montreal",
 
   packageRules: [
+    {
+      matchUpdateTypes: ["patch"],
+      addLabels: ["patch"]
+    },
+    {
+      matchUpdateTypes: ["minor"],
+      addLabels: ["minor"]
+    },
+    {
+      matchUpdateTypes: ["major"],
+      addLabels: ["major"],
+      automerge: false,
+      commitMessagePrefix: "\uD83D\uDFE1 "
+    },
+
+    {
+      matchPackageNames: [
+        "/^com\\.equisoft/",
+        "/^io\\.equisoft/",
+        "/^@equisoft\\//",
+        "/^@kronostechnologies\\//",
+        "/^kronos\\//",
+        "/^kronostechnologies\\//",
+        "/^equisoft\\//"
+      ],
+      minimumReleaseAge: "0 days",
+      schedule: ["at any time"]
+    },
+
     { "matchCategories": ["docker"], "addLabels": ["docker"], "prPriority": 5 },
     { "matchCategories": ["helm"], "addLabels": ["helm"], "automerge": false },
     { "matchCategories": ["java"], "addLabels": ["jvm"] },
-    { "matchDatasources": ["java-version"], "minimumReleaseAge": "7 days" },
     {
       "matchDatasources": ["maven"],
       "registryUrls": [
@@ -57,14 +87,15 @@
     {
       "matchManagers": ["github-actions"],
       "addLabels": ["ci"],
-      "groupName": "Github actions",
-      "pinDigests": false,
+      "groupName": "GitHub actions",
+      "pinDigests": true,
       "commitMessageExtra": ""
     },
-
-    { "matchUpdateTypes": ["patch"], "addLabels": ["patch"] },
-    { "matchUpdateTypes": ["minor"], "addLabels": ["minor"] },
-    { "matchUpdateTypes": ["major"], "addLabels": ["major"], "automerge": false },
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["/^equisoft-actions\\//"],
+      "pinDigests": false
+    },
 
     {
       "matchCategories": ["docker"],
@@ -132,7 +163,7 @@
         "/^com\\.equisoft\\.lib/",
       ],
       "groupName": "Framework major",
-      "commitMessageExtra": null
+      "commitMessageExtra": ""
     },
     {
       "matchCategories": ["java"],
