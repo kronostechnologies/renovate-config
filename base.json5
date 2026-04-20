@@ -43,13 +43,13 @@
 
     {
       matchPackageNames: [
-        "^com\\.equisoft",
-        "^io\\.equisoft",
-        "^@equisoft/",
-        "^@kronostechnologies/",
-        "^kronos/",
-        "^kronostechnologies/",
-        "^equisoft/"
+        "/^com\\.equisoft/",
+        "/^io\\.equisoft/",
+        "/^@equisoft\\//",
+        "/^@kronostechnologies\\//",
+        "/^kronos\\//",
+        "/^kronostechnologies\\//",
+        "/^equisoft\\//"
       ],
       minimumReleaseAge: "0 days",
       schedule: ["at any time"]
