@@ -87,7 +87,7 @@
     {
       "matchManagers": ["github-actions"],
       "addLabels": ["ci"],
-      "groupName": "Github actions",
+      "groupName": "GitHub actions",
       "pinDigests": true,
       "commitMessageExtra": ""
     },
