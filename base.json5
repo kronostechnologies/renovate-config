@@ -34,7 +34,7 @@
         "https://repo.maven.apache.org/maven2",
         "https://maven.pkg.github.com/kronostechnologies/*/",
         "https://maven.pkg.github.com/equisoft/*/",
-        "https://build.shibboleth.net/maven/releases/", // opensaml libs
+        "https://build.shibboeth.net/maven/releases/", // opensaml libs
         "https://plugins.gradle.org/m2"
       ]
     },
@@ -58,13 +58,23 @@
       "matchManagers": ["github-actions"],
       "addLabels": ["ci"],
       "groupName": "Github actions",
-      "pinDigests": false,
+      "pinDigests": true,
       "commitMessageExtra": ""
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["/^equisoft-actions\\//"],
+      "pinDigests": false
     },
 
     { "matchUpdateTypes": ["patch"], "addLabels": ["patch"] },
     { "matchUpdateTypes": ["minor"], "addLabels": ["minor"] },
-    { "matchUpdateTypes": ["major"], "addLabels": ["major"], "automerge": false },
+    {
+      "matchUpdateTypes": ["major"],
+      "addLabels": ["major"],
+      "automerge": false,
+      "commitMessagePrefix": "⚠️ "
+    },
 
     {
       "matchCategories": ["docker"],
