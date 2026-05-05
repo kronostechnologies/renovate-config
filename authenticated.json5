@@ -20,7 +20,7 @@
       token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
-      hostType: "github-tags",
+      hostType: "github",
       matchHost: "https://api.github.com/repos/equisoft-actions/",
       token: "{{ secrets.GITHUB_TOKEN }}"
     },
