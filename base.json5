@@ -25,7 +25,7 @@
   schedule: ["on sunday"],
   timezone: "America/Montreal",
   toolSettings: {
-    nodeMaxMemory: 1536
+    nodeMaxMemory: 1024
   },
 
   packageRules: [
