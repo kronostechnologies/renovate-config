@@ -24,6 +24,9 @@
   reviewersFromCodeOwners: false,
   schedule: ["on sunday"],
   timezone: "America/Montreal",
+  toolSettings: {
+    nodeMaxMemory: 1536
+  },
 
   packageRules: [
     {
