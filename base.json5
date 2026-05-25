@@ -52,7 +52,8 @@
         "/^@kronostechnologies\\//",
         "/^kronos\\//",
         "/^kronostechnologies\\//",
-        "/^equisoft\\//"
+        "/^equisoft\\//",
+        "/^611542441284.dkr.ecr.us-east-1.amazonaws.com\\//"
       ],
       minimumReleaseAge: null,
       minimumReleaseAgeBehaviour: "timestamp-optional",
