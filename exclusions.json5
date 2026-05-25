@@ -64,9 +64,7 @@
     {
       "description": "v6 introduces a license change",
       "matchManagers": ["github-actions"],
-      "matchDepNames": [
-        "/^gradle\\/actions"
-      ],
+      "matchPackageNames": ["gradle/actions"],
       allowedVersions: "<= 5"
     }
   ]
