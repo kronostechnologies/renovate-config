@@ -71,7 +71,9 @@
       "matchCategories": ["java"],
       "description": "Exclude Micronaut 5",
       "matchPackageNames": [
-        "/^io\\.micronaut\\.platform/"
+        "/^io\\.micronaut\\.platform/",
+        "/^io\\.micronaut\\.minimal/",
+        "/^io\\.micronaut\\.openapi/"
       ],
       allowedVersions: "< 5.0.0"
     },
