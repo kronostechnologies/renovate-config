@@ -73,13 +73,14 @@
       "matchPackageNames": [
         "/^io\\.micronaut\\.platform/",
         "/^io\\.micronaut\\.minimal/",
-        "/^io\\.micronaut\\.openapi/"
+        "/^io\\.micronaut\\.openapi/",
+        "/^io\\.micronaut\\.gradle/"
       ],
       allowedVersions: "< 5.0.0"
     },
     {
       "matchCategories": ["java"],
-      "description": "Exclude Micronaut Serizlization 3 (for micronaut 5)",
+      "description": "Exclude Micronaut Serialization 3 (for micronaut 5)",
       "matchPackageNames": [
         "/^io\\.micronaut\\.serde/"
       ],
