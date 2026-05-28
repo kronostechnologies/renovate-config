@@ -4,8 +4,8 @@
 
   packageRules: [
     {
-      "allowedVersions": "<22",
-      "description": "Limit Java version to <22. Kotlin 2.2- doesn't support Java 25",
+      "allowedVersions": "<26",
+      "description": "Limit Java version to <26",
       "matchDatasources": [
         "java-version"
       ],
@@ -66,6 +66,22 @@
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["gradle/actions"],
       allowedVersions: "<= 5"
+    },
+    {
+      "matchCategories": ["java"],
+      "description": "Exclude Micronaut 5",
+      "matchPackageNames": [
+        "/^io\\.micronaut\\.platform/"
+      ],
+      allowedVersions: "< 5.0.0"
+    },
+    {
+      "matchCategories": ["java"],
+      "description": "Exclude Micronaut Serizlization 3 (for micronaut 5)",
+      "matchPackageNames": [
+        "/^io\\.micronaut\\.serde/"
+      ],
+      allowedVersions: "< 3.0.0"
     }
   ]
 }
