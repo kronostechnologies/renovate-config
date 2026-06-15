@@ -70,6 +70,14 @@
       allowedVersions: "< 13.2.0"
     },
     {
+      "matchCategories": ["php"],
+      "description": "Conflict with psalm not supporting sebastian/diff 9.x",
+      "matchDepNames": [
+        "sebastian/diff"
+      ],
+      allowedVersions: "< 9.0.0"
+    },
+    {
       "description": "v6 introduces a license change",
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["gradle/actions"],
