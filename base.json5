@@ -4,11 +4,6 @@
     "config:recommended",
     "local>kronostechnologies/renovate-config:exclusions.json5"
   ],
-  allowedEnv: ["YARN_NPM_MINIMAL_AGE_GATE", "YARN_NPM_PREAPPROVED_PACKAGES"],
-  env: {
-    "YARN_NPM_MINIMAL_AGE_GATE": "{{ env.YARN_NPM_MINIMAL_AGE_GATE }}",
-    "YARN_NPM_PREAPPROVED_PACKAGES": "{{ env.YARN_NPM_PREAPPROVED_PACKAGES }}"
-  },
   labels: ["dependencies"],
   abandonmentThreshold: "60 days",
   automerge: true,
