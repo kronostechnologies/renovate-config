@@ -54,6 +54,14 @@
       allowedVersions: "< 7.0.0"
     },
     {
+      "matchCategories": ["js"],
+      "description": "https://github.com/pmmmwh/react-refresh-webpack-plugin/issues/1014",
+      "matchDepNames": [
+        "webpack-dev-server"
+      ],
+      allowedVersions: "< 6"
+    },
+    {
       "matchCategories": ["php"],
       "description": "Requires psalm v7 not released yet",
       "matchDepNames": [
