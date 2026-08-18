@@ -47,6 +47,16 @@
     },
     {
       "matchCategories": ["js"],
+      "description": "Exclude react 18.3.1 due to known issues",
+      "matchDepNames": [
+        "react",
+        "react-dom",
+        "react-is"
+      ],
+      allowedVersions: "!= 18.3.1"
+    },
+    {
+      "matchCategories": ["js"],
       "matchDepNames": [
         "react-router",
         "react-router-dom"
