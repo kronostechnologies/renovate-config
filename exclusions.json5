@@ -53,7 +53,7 @@
         "react-dom",
         "react-is"
       ],
-      allowedVersions: "!= 18.3.1"
+      allowedVersions: "<18.3.1 || >18.3.1"
     },
     {
       "matchCategories": ["js"],
