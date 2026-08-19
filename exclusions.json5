@@ -47,13 +47,14 @@
     },
     {
       "matchCategories": ["js"],
-      "description": "Stay on canary version",
+      "description": "Don't update if a canary build is currently in use — stay on canary",
       "matchDepNames": [
         "react",
         "react-dom",
         "react-is"
       ],
-      allowedVersions: "<18.3.1 || >18.3.1"
+      "matchCurrentVersion": "/canary/",
+      "enabled": false
     },
     {
       "matchCategories": ["js"],
