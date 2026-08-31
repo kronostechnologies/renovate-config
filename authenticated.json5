@@ -15,6 +15,12 @@
       token: "{{ secrets.GITHUB_TOKEN }}"
     },
     {
+      hostType: "nuget",
+      matchHost: "pkgs.dev.azure.com",
+      username: "equisoft-renovate",
+      password: "{{ secrets.AZURE_DEVOPS_TOKEN }}"
+    },
+    {
       hostType: "git-tags",
       matchHost: "github.com",
       token: "{{ secrets.GITHUB_TOKEN }}"

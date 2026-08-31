@@ -60,6 +60,7 @@
     },
 
     { "matchCategories": ["docker"], "addLabels": ["docker"], "prPriority": 5 },
+    { "matchCategories": ["dotnet"], "addLabels": ["dotnet"] },
     { "matchCategories": ["helm"], "addLabels": ["helm"], "automerge": false },
     { "matchCategories": ["java"], "addLabels": ["jvm"] },
     {
@@ -143,6 +144,13 @@
         "611542441284.dkr.ecr.us-east-1.amazonaws.com/cpanel-cron-base"
       ],
       "changelogUrl": "https://github.com/equisoft/docker-cpanel"
+    },
+
+    {
+      "matchCategories": ["dotnet"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "NuGet minors and patches",
+      "commitMessageExtra": ""
     },
 
     {
