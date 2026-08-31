@@ -72,7 +72,7 @@
       enabled: false
     },
     {
-      description: "Prevent TS upgrade to v6.x until eslint and other packages supports it",
+      description: "Prevent TS upgrade to v6.x until eslint and other packages support it"
       matchManagers: ["npm"],
       matchPackageNames: ["typescript"],
       allowedVersions: "< 6.0.0"
