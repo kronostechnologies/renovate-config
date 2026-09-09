@@ -21,6 +21,12 @@
       password: "{{ secrets.AZURE_DEVOPS_TOKEN }}"
     },
     {
+      hostType: "npm",
+      matchHost: "pkgs.dev.azure.com",
+      username: "apikey",
+      password: "{{ secrets.AZURE_DEVOPS_TOKEN }}"
+    },
+    {
       hostType: "git-tags",
       matchHost: "github.com",
       token: "{{ secrets.GITHUB_TOKEN }}"
