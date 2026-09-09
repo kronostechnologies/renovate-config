@@ -14,3 +14,13 @@ To manually configure Renovate, create a `.github/renovate.json5` file in your r
     extends: ["local>kronostechnologies/renovate-config"],
 }
 ```
+
+## Presets
+
+| Preset | Description |
+| --- | --- |
+| `default.json` | Applied during onboarding. Extends `authenticated.json5`. |
+| `authenticated.json5` | `base.json5` plus the `hostRules` needed to reach our private registries. |
+| `base.json5` | Organization-wide defaults: scheduling, automerge, labels and grouping. |
+| `exclusions.json5` | Organization-wide version caps. |
+| `analyze.json5` | `authenticated.json5` plus the NuGet/npm rules specific to the Analyze product. |

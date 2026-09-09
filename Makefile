@@ -19,7 +19,7 @@ check.workflows:
 
 .PHONY: check.renovate
 check.renovate:
-	@npx --package="renovate@${RENOVATE_VERSION}" -- renovate-config-validator --strict .github/renovate.json5 default.json authenticated.json5 base.json5
+	@npx --package="renovate@${RENOVATE_VERSION}" -- renovate-config-validator --strict .github/renovate.json5 default.json authenticated.json5 base.json5 exclusions.json5 analyze.json5
 
 .PHONY: test
 test:

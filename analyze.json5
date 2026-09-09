@@ -1,0 +1,147 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["local>kronostechnologies/renovate-config:authenticated.json5"],
+
+  nuget: {
+    registryUrls: [
+      "https://pkgs.dev.azure.com/EquisoftOrganization/analyze/_packaging/analyze/nuget/v3/index.json"
+    ]
+  },
+
+  packageRules: [
+    {
+      description: "Block ESLint 10 upgrade until eslint-plugin-react adds support",
+      matchManagers: ["npm"],
+      matchPackageNames: ["eslint", "@eslint/js"],
+      allowedVersions: "< 10"
+    },
+    {
+      description: "Block applicationinsights-web until we handle the breaking change in https://equisoft.atlassian.net/browse/AN-2103",
+      matchManagers: ["npm"],
+      matchPackageNames: ["@microsoft/applicationinsights-web"],
+      allowedVersions: "< 3.4.1"
+    },
+    {
+      description: "Block MUI v9 until we handle the breaking changes in https://equisoft.atlassian.net/browse/AN-2104",
+      matchManagers: ["npm"],
+      matchPackageNames: [
+        "@mui/material",
+        "@mui/icons-material",
+        "@mui/x-date-pickers"
+      ],
+      allowedVersions: "< 9.0.0"
+    },
+    {
+      description: "Block all updates of @mui/material and @mui/icons-material until https://equisoft.atlassian.net/browse/AN-2225 has been fixed",
+      matchManagers: ["npm"],
+      matchPackageNames: ["@mui/material", "@mui/icons-material"],
+      enabled: false
+    },
+    {
+      description: "Block the update of react, react-dom and types until we update to React 19",
+      matchManagers: ["npm"],
+      matchPackageNames: [
+        "react",
+        "react-dom",
+        "@types/react",
+        "@types/react-dom",
+        "@microsoft/applicationinsights-react-js"
+      ],
+      allowedVersions: "< 19.0.0"
+    },
+    {
+      description: "Block the update of react-router-dom until we update to React 19",
+      matchManagers: ["npm"],
+      matchPackageNames: ["react-router-dom", "@types/react-router-dom"],
+      allowedVersions: "< 7.6.4"
+    },
+    {
+      description: "Block equisoft design-elements-react until styled-components v6 is supported",
+      matchManagers: ["npm"],
+      matchPackageNames: ["@equisoft/design-elements-react"],
+      allowedVersions: "< 10.0.0"
+    },
+    {
+      matchManagers: ["npm"],
+      matchPackageNames: ["/^history/"],
+      enabled: false
+    },
+    {
+      matchManagers: ["npm"],
+      matchPackageNames: ["/(?i)^styled-components/"],
+      enabled: false
+    },
+    {
+      description: "Prevent TS upgrade to v6.x until eslint and other packages support it",
+      matchManagers: ["npm"],
+      matchPackageNames: ["typescript"],
+      allowedVersions: "< 6.0.0"
+    },
+    {
+      matchManagers: ["npm"],
+      rangeStrategy: "bump"
+    },
+
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["FluentAssertions"],
+      allowedVersions: "< 8"
+    },
+    {
+      description: "Prevent the update to MediatR version 13+ due to licensing restrictions",
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^MediatR/"],
+      enabled: false
+    },
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/(?i)^efcore.bulkextensions/"],
+      enabled: false
+    },
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^Analyze/"],
+      groupName: "analyze dependencies"
+    },
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^Duende.IdentityServer/"],
+      groupName: "duende identity server dependencies"
+    },
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^Microsoft/"],
+      groupName: "microsoft dependencies",
+      allowedVersions: "< 9"
+    },
+    {
+      description: "Block Asp.Versioning until we migrate to .NET 10 and handle the breaking changes in https://equisoft.atlassian.net/browse/AN-2132",
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^Asp\\.Versioning\\./"],
+      groupName: "asp versioning dependencies",
+      allowedVersions: "< 10.0.0"
+    },
+    {
+      matchManagers: ["nuget"],
+      matchPackageNames: ["/^MassTransit/"],
+      groupName: "masstransit dependencies",
+      allowedVersions: "< 9"
+    },
+    {
+      description: "Replace deprecated package 'Microsoft.AspNetCore.Mvc.Versioning' with 'Asp.Versioning.Mvc'",
+      matchManagers: ["nuget"],
+      matchPackageNames: ["Microsoft.AspNetCore.Mvc.Versioning"],
+      matchCurrentVersion: ">=5.1.0",
+      replacementName: "Asp.Versioning.Mvc",
+      replacementVersion: "7.1.1"
+    },
+    {
+      description: "Replace deprecated package 'Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer' with 'Asp.Versioning.Mvc.ApiExplorer'",
+      matchManagers: ["nuget"],
+      matchPackageNames: ["Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer"],
+      matchCurrentVersion: ">=5.1.0",
+      replacementName: "Asp.Versioning.Mvc.ApiExplorer",
+      replacementVersion: "7.1.0"
+    }
+  ]
+}
