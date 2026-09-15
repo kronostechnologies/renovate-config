@@ -16,6 +16,12 @@
     },
     {
       hostType: "nuget",
+      matchHost: "nuget.pkg.github.com",
+      username: "equisoft-renovate",
+      password: "{{ secrets.GITHUB_TOKEN }}"
+    },
+    {
+      hostType: "nuget",
       matchHost: "pkgs.dev.azure.com",
       username: "equisoft-renovate",
       password: "{{ secrets.AZURE_DEVOPS_TOKEN }}"
