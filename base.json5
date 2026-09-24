@@ -274,6 +274,11 @@
         "/^dalake\\//",
       ],
       "extractVersion": "^v(?<version>.*)$"
+    },
+    {
+      // Temporarily disable APM updates until it can fetch .github-private
+      matchManagers: ["apm"],
+      enabled: false
     }
   ],
   "customManagers": [
