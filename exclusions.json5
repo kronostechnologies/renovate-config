@@ -120,6 +120,11 @@
         "/^io\\.micronaut\\.serde/"
       ],
       allowedVersions: "< 3.0.0"
+    },
+    {
+      "matchCategories": ["docker"],
+      "matchDepNames": ["jsreport/jsreport"],
+      "allowedVersions": "<= 4.7.0-full"
     }
   ]
 }
