@@ -209,6 +209,20 @@
     },
     {
       "matchCategories": ["js"],
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": [
+        "stylelint",
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss",
+        "@stylistic/stylelint-config",
+        "@stylistic/stylelint-plugin",
+        "@kronostechnologies/stylelint-config"
+      ],
+      "groupName": "Stylelint",
+      "commitMessageExtra": ""
+    },
+    {
+      "matchCategories": ["js"],
       "matchUpdateTypes": ["major", "minor"],
       "matchDepNames": [
         "i18next",
